@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        String str = new Scanner(System.in).nextLine().replaceAll("\\s+", "").toLowerCase();
+        System.out.println(str.equals(new StringBuilder(str).reverse().toString()) ? "Palindrome" : "Not Palindrome");
+    }
+}
