@@ -1,1 +1,6 @@
-
+public class ReverseStringShort {
+    public static void main(String[] args) {
+        String input = "yajiv";
+        System.out.println(new StringBuilder(input).reverse().toString());
+    }
+}
