@@ -1,0 +1,12 @@
+public class VowelConsonantCounter {
+    public static void main(String[] args) {
+        String input = new java.util.Scanner(System.in).nextLine().toLowerCase();
+        int vowels = 0, consonants = 0;
+
+        for (char ch : input.toCharArray()) 
+            if (ch >= 'a' && ch <= 'z') 
+                if ("aeiou".indexOf(ch) != -1) vowels++; else consonants++;
+
+        System.out.println("Vowels: " + vowels + ", Consonants: " + consonants);
+    }
+}
